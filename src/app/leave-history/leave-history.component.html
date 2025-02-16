@@ -1,0 +1,66 @@
+<div class="container">
+    <div class="leave-request">
+        <h3>สถิติการลาประจำเดือน</h3>
+        <p>ข้อมูลการลาของพนักงานทั้งหมด</p>
+        <button class="btn status-btn" (click)="exportToExcel()">
+            <i class="fa-solid fa-download"></i>
+            Export Excel
+        </button>
+    </div>
+    <div class="leave-request">
+        <div class="mb-3">
+            <label for="monthSelect" class="form-label">เลือกเดือน</label>
+            <div class="form-select-wrapper">
+                <i class="fa-solid fa-calendar"></i>
+                <input type="month" id="monthSelect" class="form-control" aria-label="Select month and year">
+            </div>
+        </div>
+        
+    
+        <div class="mb-3">
+            <label for="departmentSelect" class="form-label">แผนก</label>
+            <div class="form-select-wrapper">
+                <i class="fa-solid fa-filter"></i>
+                <select class="form-select" id="departmentSelect" aria-label="Select department">
+                    <option selected>ทั้งหมด</option>
+                    <option value="1">IT</option>
+                    <option value="2">SD</option>
+                    <option value="3">HR</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="chart">
+        <h3>สรุปการลาแยกตามประเภท</h3>
+        <div id="main" style="width: 1200px; height: 400px;"></div>
+      </div>
+      
+
+    <div class="form">
+        <h3>รายละเอียดการลารายบุคคล</h3>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ชื่อ-นามสกุล</th>
+                    <th>แผนก</th>
+                    <th>ลาป่วย</th>
+                    <th>ลาพักร้อน</th>
+                    <th>ลากิจ</th>
+                    <th>รวม</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let leave of leaveDetails">
+                  <td>{{ leave.name }}</td>
+                  <td>{{ leave.leaveType }}</td>
+                  <td>{{ leave.sickLeave }}</td>
+                  <td>{{ leave.vacationLeave }}</td>
+                  <td>{{ leave.personalLeave }}</td>
+                  <td>{{ leave.together }}</td>
+                </tr>
+              </tbody>
+        </table>
+    </div>
+</div>

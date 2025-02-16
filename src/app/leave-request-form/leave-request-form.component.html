@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="form">
+        <h2><i class="fa-solid fa-id-card"></i>แบบฟอร์มขอลางาน</h2>
+        <div class="mb-3">
+            <label for="leaveType" class="form-label">ประเภทการลา</label>
+            <select class="form-select" id="leaveType" aria-label="Default select example">
+                <option selected>เลือกประเภทการลา</option>
+                <option value="1">ลาพักร้อน</option>
+                <option value="2">ลาป่วย</option>
+                <option value="3">ลากิจ</option>
+            </select>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="startDate" class="form-label">วันที่เริ่มต้น</label>
+                <input type="date" class="form-control" id="startDate" placeholder="mm/dd/yyyy">
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="endDate" class="form-label">วันที่สิ้นสุด</label>
+                <input type="date" class="form-control" id="endDate" placeholder="mm/dd/yyyy">
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="leaveReason" class="form-label">เหตุผลการลา</label>
+            <textarea class="form-control" id="leaveReason" rows="3" placeholder="ระบุเหตุผลการลา"></textarea>
+        </div>
+
+        <div class="buttons">
+            <button type="button" class="btn btn-secondary">ยกเลิก</button>
+            <button type="button" class="btn btn-primary" (click)="showAlert()">ส่งคำขอลา</button>
+        </div>
+    </div>
+</div>

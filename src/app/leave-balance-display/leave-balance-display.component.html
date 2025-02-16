@@ -1,0 +1,54 @@
+<div class="container">
+    <div class="leave-request">
+        <h3>รายการขออนุมัติการลา</h3>
+        <p>รายการที่รอการอนุมัติทั้งหมด 1 รายการ</p>
+        <button class="btn status-btn">รออนุมัติ</button>
+    </div>
+    <div class="leave-request">
+        <h4>บิ๋ม บิ๋ม</h4>
+        <p>นักศึกษาฝึกงาน</p>
+    
+        <hr class="divider">
+
+            <div class="detail-row">
+                <div class="detail-item">
+                    <label>ประเภทการลา</label>
+                    <p>ลาพักร้อน</p>
+                </div>
+                <div class="detail-day">
+                    <label>จำนวนวัน</label>
+                    <p>2 วัน</p>
+                </div>
+            </div>
+
+            <div class="detail-row">
+                <div class="detail-start">
+                    <label>วันที่เริ่มต้น</label>
+                    <p>2025-02-15</p>
+                </div>
+
+                <div class="detail-end">
+                    <label>วันที่สิ้นสุด</label>
+                    <p>2025-02-16</p>
+                </div>
+            </div>
+
+            <div class="detail-reason">
+                <label>เหตุผลการลา</label>
+                <p>พักผ่อนกับครอบครัว</p>
+            </div>
+
+            <label><i class="fa-regular fa-comments"></i>ความคิดเห็น</label>
+            <textarea rows="3" placeholder="เพิ่มความคิดเห็น (ถ้ามี)"></textarea>
+            
+            <div class="buttons">
+                <button class="btn reject-btn" (click)="rejectLeave()">
+                    <i class="fa-solid fa-xmark"></i> ไม่อนุมัติ
+                </button>
+                <button class="btn approve-btn" (click)="approveLeave()">
+                   <i class="fa-solid fa-check"></i> อนุมัติ
+                </button>
+            </div>
+                
+        </div>
+</div>

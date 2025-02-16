@@ -1,0 +1,154 @@
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+    font-family: Arial, sans-serif;
+}
+
+.form-select-wrapper {
+    position: relative;
+}
+
+.form-select-wrapper select {
+    width: 100%;
+    padding: 10px 15px 10px 35px; 
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.form-select-wrapper i {
+    position: absolute;
+    left: 10px; 
+    top: 50%;
+    transform: translateY(-50%); 
+    color: #CCCCCC; 
+    font-size: 1.2rem; 
+}
+
+input[type="month"] {
+    padding-left: 30px; 
+    font-size: 1rem;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+.status-btn {
+    background-color: #4caf50;
+    color: white;
+    float: right; 
+    padding: 10px 20px;
+    border-radius: 15px;
+    position: relative;
+    top: -60px; 
+}
+
+h3 {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+/* ปรับให้ปุ่มยกเลิกและส่งขอขนานกัน */
+.d-flex {
+    margin-top: 20px;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.chart {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+#main {
+    width: 600px;
+    height: 400px;
+  }
+
+.form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.form-label, .form-select, .form-control {
+    display: block; 
+    width: 100%; 
+    margin-bottom: 15px; 
+}
+
+/* ปรับช่อง select ให้ดูสวยงาม */
+.form-select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem; 
+    border-radius: 5px; 
+    border: 1px solid #ccc;
+    background-color: #f9f9f9; 
+    transition: border-color 0.3s ease;
+}
+
+.form-select:focus {
+    border-color: #007bff; 
+    outline: none; 
+    background-color: #ffffff;
+}
+
+label i {
+    font-size: 1.5rem; 
+    margin-right: 10px; /* ระยะห่างระหว่างไอคอนและข้อความ */
+}
+
+.leave-request {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .leave-request h3, .leave-request p {
+        text-align: center;
+    }
+
+    .status-btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .table th, .table td {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    #main {
+        height: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .form-select, .form-control {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+
+    .status-btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
