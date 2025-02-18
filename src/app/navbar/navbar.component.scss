@@ -35,7 +35,7 @@
   }
 
   .navbar-nav .nav-item:last-child {
-    margin-right: 120px; /* เพิ่มระยะห่างขวาของ "ประวัติการลา" */
+    margin-right: 90px; /* เพิ่มระยะห่างขวาของ "ประวัติการลา" */
   }
   
   .nav-item.dropdown .dropdown-item {
@@ -89,6 +89,9 @@
     width: 400px;
     border-radius: 5px;
     margin-right: 10px; 
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .search-btn {
@@ -98,7 +101,7 @@
     color: white;
     border: none;
     cursor: pointer;
-    margin-right: 110px; 
+    margin-right: 70px; 
    
 }
 
@@ -106,6 +109,7 @@
     display: flex;
     gap: 20px; 
     font-size: 1.5rem;
+    
 }
 
 .icon-container i {

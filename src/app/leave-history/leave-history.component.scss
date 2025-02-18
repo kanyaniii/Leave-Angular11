@@ -44,14 +44,46 @@ input[type="month"] {
     top: -60px; 
 }
 
+.calendar-btn {
+    background-color: #007bff;
+    color: white;
+    float: right; 
+    padding: 10px 20px;
+    border-radius: 15px;
+    position: relative;
+    top: -60px; 
+}
+
 h3 {
     font-size: 1.6rem;
     font-weight: bold;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
 }
 
 p {
     font-size: 1.2rem;
     margin: 5px 0;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+th {
+    font-size: 1.2rem;
+    margin: 5px 0;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+td {
+    font-size: 1.2rem;
+    margin: 5px 0;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
 }
 
 /* ปรับให้ปุ่มยกเลิกและส่งขอขนานกัน */
@@ -62,7 +94,10 @@ p {
 }
 
 .chart {
-    background-color: #f9f9f9;
+    // background-color: #f9f9f9;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -75,7 +110,10 @@ p {
   }
 
 .form {
-    background-color: #f9f9f9;
+    // background-color: #f9f9f9;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -86,6 +124,9 @@ p {
     display: block; 
     width: 100%; 
     margin-bottom: 15px; 
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
 }
 
 /* ปรับช่อง select ให้ดูสวยงาม */
@@ -112,7 +153,10 @@ label i {
 }
 
 .leave-request {
-    background-color: #f9f9f9;
+    // background-color: #f9f9f9;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -151,4 +195,25 @@ label i {
         margin-top: 10px;
     }
 }
+
+.pagination {
+    margin: 20px;
+    background-color: var(--card-bg) !important;
+    color: var(--text-color) !important;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination .page-link {
+    background-color: var(--card-bg) !important;
+    color: var(--text-color) !important;
+    border: 1px solid var(--border-color, #ccc) !important;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: var(--primary-color, #007bff) !important;
+    color: white !important;
+}
+
+
+
 

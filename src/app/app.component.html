@@ -25,12 +25,13 @@
     <!-- <button  class="theme" (click)="toggleTheme()">
       <mat-icon>{{ isDarkMode ? 'brightness_7' : 'brightness_6' }}</mat-icon>
     </button> -->
-    
    
-  <app-navbar></app-navbar>
-  <!-- <app-leave-request-form></app-leave-request-form> -->
-   <!-- <app-leave-balance-display></app-leave-balance-display> -->
-    <!-- <app-dashboard></app-dashboard> -->
-     <!-- <app-leave-history></app-leave-history> -->
+
+   
+  <app-navbar ></app-navbar>
+  <button (click)="toggleTheme()" class="theme-toggle-btn">
+    <i [class]="isDarkMode ? 'fas fa-sun' : 'fas fa-moon'"></i>
+  </button>  
+  <!-- <app-calendar-view></app-calendar-view> -->
      <router-outlet></router-outlet>
 </div>

@@ -5,7 +5,10 @@
 }
 
 .form {
-    background-color: #ffffff; 
+    // background-color: #ffffff; 
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
     padding: 25px; 
     border-radius: 8px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
@@ -16,7 +19,10 @@
 
 h2 {
     font-size: 2rem; 
-    color: #333; 
+    // color: #333; 
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
     margin-bottom: 20px; 
     display: flex; 
     align-items: center;
@@ -46,7 +52,10 @@ input.form-control, textarea.form-control {
 .form-label, .form-select, .form-control {
     display: block; 
     width: 100%; 
-    margin-bottom: 15px; 
+    margin-bottom: 15px;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s; 
 }
 
 /* ปรับช่อง select ให้ดูสวยงาม */

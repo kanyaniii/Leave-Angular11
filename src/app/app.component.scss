@@ -1,91 +1,38 @@
-/* ปรับพื้นหลังของ navbar */
-.navbar {
-    background-color: #343a40; /* สีเข้ม */
-    padding: 0.5rem 1rem; /* ปรับระยะห่างด้านใน */
-    justify-content: center; /* จัดกลางแนวนอน */
-  }
-  
-  /* ปรับสีของแบรนด์ */
-  .navbar-brand {
-    font-size: 1.5rem; /* ขนาดตัวอักษร */
-    font-weight: bold;
-    color: #f39c12; /* สีขาว */
-    transition: color 0.3s ease;
-  }
-  
-  .navbar-brand:hover {
-    color: #ffffff; /* สีทองเมื่อ hover */
-  }
-  
-  /* ปรับลิงค์ใน navbar */
-  .nav-link {
-    color: #ffffff !important; /* สีขาว */
-    font-size: 1rem;
-    padding: 0.5rem 1rem; /* ระยะห่าง */
-    transition: color 0.3s ease;
-  }
-  
-  .nav-link:hover {
-    color: #f39c12 !important; /* สีทองเมื่อ hover */
-  }
-  
-  /* ปรับลิงค์ที่เลือก */
-  .nav-link.active {
-    color: #f39c12 !important;
-  }
-  
-  /* ปรับ dropdown */
-  .nav-item.dropdown .dropdown-menu {
-    background-color: #343a40; /* สีพื้นหลังของ dropdown */
-    border-radius: 0.5rem; /* มุมโค้ง */
-  }
 
-  .navbar-nav .nav-item:last-child {
-    margin-right: 450px; /* เพิ่มระยะห่างขวาของ "ประวัติการลา" */
-  }
-  
-  .nav-item.dropdown .dropdown-item {
-    color: #ffffff; /* สีขาว */
-    padding: 0.5rem 1rem;
-    transition: background-color 0.3s ease;
-  }
-  
-  .nav-item.dropdown .dropdown-item:hover {
-    background-color: #f39c12; /* สีทองเมื่อ hover */
-    color: #343a40; /* สีเข้ม */
-  }
-  
-  /* ปรับ form search */
-  .form-control {
-    width: 400px;
-    padding: 0.5rem 1rem; /* ปรับขนาด padding */
-    font-size: 1rem; /* ขนาดตัวอักษร */
-    border-radius: 0.5rem; /* มุมโค้ง */
-  }
-
-  .form-inline {
-    margin-left: auto;
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-  .btn-outline-success {
-    border-radius: 0.5rem; /* มุมโค้ง */
-    color: #ffffff;
-    border-color: #f39c12;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    margin-left: 0.5rem;
-  }
-  
-  .btn-outline-success:hover {
-    background-color: #f39c12;
-    color: #343a40;
-  }
-  
   /* ปรับสำหรับขนาดเล็ก */
   @media (max-width: 991px) {
     .navbar-nav {
       text-align: center;
     }
   }
+
+  .nav-container {
+    top: 10px;
+    right: 10px;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .theme-toggle-btn {
+    position: fixed; /* ให้ปุ่มอยู่ตลอด */
+    top: 22px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--text-color);
+    transition: color 0.3s;
+    z-index: 1000; /* ให้ปุ่มอยู่บนสุด */
+    margin-right: 20px; 
+  }
+  
+  .theme-toggle-btn i {
+    font-size: 24px;
+  }
+  
   

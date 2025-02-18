@@ -11,6 +11,25 @@
 h2 {
     font-size: 2rem;
     margin-bottom: 10px;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+th {
+    font-size: 1.2rem;
+    margin: 5px 0;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+td {
+    font-size: 1.2rem;
+    margin: 5px 0;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .dashboard {
@@ -18,16 +37,20 @@ h2 {
     justify-content: space-between; 
     margin-top: 20px;
     margin-bottom: 30px;
+    
 }
 
 .status-card {
-    background-color: #ffffff;
+    // background-color: #ffffff;
     padding: 20px;
     width: 30%; 
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s ease;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .status-card:hover {
@@ -60,7 +83,10 @@ h2 {
 h3 {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #333;
+    // color: #333;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .status-info p {
@@ -75,13 +101,16 @@ h3 {
 }
 
 .form {
-    background-color: #ffffff; 
+    // background-color: #ffffff; 
     padding: 30px; 
     border-radius: 8px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
     max-width: 1140px; 
     width: 100%; 
     margin: 0 auto; 
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .table {
@@ -151,5 +180,24 @@ h3 {
     .form .table {
         margin-top: 10px;
     }
+}
+
+.pagination {
+    margin: 20px;
+    // float: right;
+    background-color: var(--card-bg) !important;
+    color: var(--text-color) !important;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination .page-link {
+    background-color: var(--card-bg) !important;
+    color: var(--text-color) !important;
+    border: 1px solid var(--border-color, #ccc) !important;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: var(--primary-color, #007bff) !important;
+    color: white !important;
 }
 
